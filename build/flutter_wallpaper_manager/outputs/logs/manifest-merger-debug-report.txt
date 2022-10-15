@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:1:1-5:12
+	package
+		ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:2:3-62
+		INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+		INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.SET_WALLPAPER
+ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:3:3-70
+	android:name
+		ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:3:20-67
+uses-permission#android.permission.INTERNET
+ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:4:3-65
+	android:name
+		ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml:4:20-62
+uses-sdk
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+		ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+		INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+		ADDED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
+		INJECTED from /home/havas/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_wallpaper_manager-0.0.3/android/src/main/AndroidManifest.xml
