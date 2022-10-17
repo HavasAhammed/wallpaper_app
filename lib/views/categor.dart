@@ -22,6 +22,7 @@ class _CategoriesState extends State<Categories> {
   bool isLoading = true;
 
   List<WallpaperModel> wallpapers = [];
+  List<String>gg=[];
 
   getSearchWallpapers(String query) async {
     var response = await http.get(
@@ -72,7 +73,7 @@ class _CategoriesState extends State<Categories> {
       ),
       body: isLoading
           ? SpinKitFadingCircle(
-              color: themeChange.darkTheme ? Colors.white : Colors.black,
+              color: themeChange.darkTheme ? Colors.black : Colors.white,
             )
           : SingleChildScrollView(
               // ignore: avoid_unnecessary_containers

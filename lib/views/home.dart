@@ -65,6 +65,7 @@ class _HomeState extends State<Home> {
     final themeChange = Provider.of<ThemeProvider>(context);
     return Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           actions: [
             IconButton(
                 onPressed: () {
@@ -74,6 +75,7 @@ class _HomeState extends State<Home> {
                     ? const Icon(Icons.bedtime)
                     : const Icon(Icons.wb_sunny))
           ],
+          centerTitle: true,
           title: brandName(context),
         ),
         body: SingleChildScrollView(
@@ -84,8 +86,8 @@ class _HomeState extends State<Home> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: themeChange.darkTheme
-                          ? const Color.fromARGB(255, 29, 39, 38)
-                          : const Color.fromARGB(255, 208, 214, 224)),
+                          ? const Color.fromARGB(255, 208, 214, 224)
+                          : const Color.fromARGB(255, 29, 39, 38)),
                   padding: const EdgeInsets.symmetric(horizontal: 24),
                   margin: const EdgeInsets.symmetric(horizontal: 24),
                   child: Row(
@@ -94,8 +96,8 @@ class _HomeState extends State<Home> {
                         child: TextField(
                           style: TextStyle(
                               color: themeChange.darkTheme
-                                  ? Colors.white
-                                  : Colors.black),
+                                  ? Colors.black
+                                  : Colors.white),
                           controller: _searchController,
                           decoration: const InputDecoration(
                             border: InputBorder.none,
@@ -116,8 +118,8 @@ class _HomeState extends State<Home> {
                             child: Icon(
                           Icons.search,
                           color: themeChange.darkTheme
-                              ? Colors.white60
-                              : Colors.black54,
+                              ? Colors.black54
+                              : Colors.white60,
                         )),
                       )
                     ],
@@ -147,7 +149,7 @@ class _HomeState extends State<Home> {
                 isLoading
                     ? SpinKitFadingCircle(
                         color:
-                            themeChange.darkTheme ? Colors.white : Colors.black,
+                            themeChange.darkTheme ? Colors.black : Colors.white,
                       )
                     : wallpaperList(wallpapers: wallpapers, context: context)
               ],

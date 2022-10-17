@@ -1,4 +1,4 @@
-#Sat Oct 15 17:39:03 IST 2022
-base.0=/home/havas/flutter projects/Wallpaper-Hub/wallpaper_hub/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Mon Oct 17 15:59:56 IST 2022
+base.0=/home/havas/Documents/wallpaper_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

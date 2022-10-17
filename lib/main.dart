@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wallpaper_hub/theme/style.dart';
 import 'package:wallpaper_hub/theme/theme_provider.dart';
-import 'package:wallpaper_hub/views/home.dart';
+import 'package:wallpaper_hub/views/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
           debugShowCheckedModeBanner: false,
           theme: Styles.themeData(themeChangeProvider.darkTheme, context),
           title: 'Wallpaper Hub',
-          home: const Home(),
+          home: const SplashScreen(),
         );
       }),
     );

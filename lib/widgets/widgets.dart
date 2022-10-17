@@ -14,9 +14,19 @@ Widget brandName(BuildContext context) {
         const SizedBox(
           width: 5,
         ),
-        Text(
-          'Hub',
-          style: Theme.of(context).textTheme.headline6,
+        Container(
+          height: 26,
+          width: 48,
+          decoration: BoxDecoration(
+            color: Colors.amber,
+            borderRadius: BorderRadius.circular(5)
+          ),
+          child: Center(
+            child: Text(
+              'Hub',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+          ),
         ),
       ],
     ),

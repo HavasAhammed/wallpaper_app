@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/havas/flutter projects/Wallpaper-Hub/wallpaper_hub/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/havas/Documents/wallpaper_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/home/havas/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values-v16/values-v16.xml",
