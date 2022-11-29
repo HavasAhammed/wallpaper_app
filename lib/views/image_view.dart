@@ -108,6 +108,8 @@ class _ImageViewState extends State<ImageView> {
     );
   }
 
+// Save to gallary
+
 //  _save() async{
 //   await _askPermission();
 //   var response = await Dio().get(
@@ -130,12 +132,16 @@ class _ImageViewState extends State<ImageView> {
 //     }
 //   }
 
+// set home wallpaper
+
   Future<void> setHomeWallpaper() async {
     int location = WallpaperManager.HOME_SCREEN;
     var file = await DefaultCacheManager().getSingleFile(widget.imgUrl);
     bool result =
         await WallpaperManager.setWallpaperFromFile(file.path, location);
   }
+
+// set lock wallpaper
 
   Future<void> setLockWallpaper() async {
     int location = WallpaperManager.LOCK_SCREEN;
