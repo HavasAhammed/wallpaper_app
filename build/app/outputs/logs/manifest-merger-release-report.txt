@@ -12,7 +12,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/havas
 	android:label
 		ADDED from /home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:4:9-38
 	android:icon
-		ADDED from /home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:6:9-43
+		ADDED from /home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:6:9-45
 	android:name
 		INJECTED from /home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml
 		ADDED from /home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:5:9-42

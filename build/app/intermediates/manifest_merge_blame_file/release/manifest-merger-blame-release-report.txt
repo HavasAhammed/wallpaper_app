@@ -22,8 +22,8 @@
 15-->/home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:5:9-42
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.6.0] /home/havas/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
-17        android:icon="@mipmap/ic_launcher"
-17-->/home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:6:9-43
+17        android:icon="@mipmap/launcher_icon"
+17-->/home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:6:9-45
 18        android:label="wallpaper_hub" >
 18-->/home/havas/Documents/wallpaper_app/android/app/src/main/AndroidManifest.xml:4:9-38
 19        <activity

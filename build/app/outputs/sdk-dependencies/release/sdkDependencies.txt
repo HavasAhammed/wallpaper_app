@@ -5,10 +5,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "flutter_embedding_release"
-    version: "1.0.0-c08d7d5efc9aa6eb3c30cfb3be6dc09bca5e7631"
+    version: "1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"
   }
   digests {
-    sha256: "\034Y\325jKXY\322I\374\375\265\222\201#\232^$_\006\003\021\251\211CS#\'\327\247,}"
+    sha256: "\322\241$j\336\273\244f\243\304\f%\215\371\272\365\244\3709,H\355Uu\252z\317\375\022\023\240\177"
   }
   repo_index {
     value: 2
@@ -487,10 +487,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "armeabi_v7a_release"
-    version: "1.0.0-c08d7d5efc9aa6eb3c30cfb3be6dc09bca5e7631"
+    version: "1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"
   }
   digests {
-    sha256: "vG\233 \v\234\by5\360\370\215K\302=F\370dB#fy\266\352\350g&\346\v\366l\036"
+    sha256: "O\a\247\265,\352R%\363!|\257\214\217a\270aj\270N5\350\207\277\025\213\232\302\034r\021t"
   }
   repo_index {
     value: 2
@@ -500,10 +500,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "arm64_v8a_release"
-    version: "1.0.0-c08d7d5efc9aa6eb3c30cfb3be6dc09bca5e7631"
+    version: "1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"
   }
   digests {
-    sha256: "\370\004\331\250\022\341\221@\330\236<^\373\335\236\257B\260>v\375\'\264\022\a\323\240~\230\206v\324"
+    sha256: "nk(\324\260;\266\357\336S5\333\341\355z\377\f\373\2475\261\227\266\372\226\"\342*\364\000[\336"
   }
   repo_index {
     value: 2
@@ -513,10 +513,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "x86_64_release"
-    version: "1.0.0-c08d7d5efc9aa6eb3c30cfb3be6dc09bca5e7631"
+    version: "1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"
   }
   digests {
-    sha256: "q\214\271\262\260M\202W\302?t\341.\353\251\017Ge\371\233\255\232\210tu\332TM\205\027\262\371"
+    sha256: ";\362\0013\330\246\377`\223\270\001\303\244y8\250!\346\334Y=\257\274f\214P\352\243\303j\t7"
   }
   repo_index {
     value: 2
@@ -524,7 +524,7 @@ library {
 }
 library {
   digests {
-    sha256: "\004\224E\002\310\242\031\334\267\017\2124\202\340\231#\237\313\220\277y\217\271\347\373\250\033\\\202\265W\006"
+    sha256: "\372Xv\017!j\240D\225\225\016n\022[b\363\325N\371\300L^\261J\342\255\322^ZU/\307"
   }
 }
 library_dependencies {

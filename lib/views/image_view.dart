@@ -108,29 +108,7 @@ class _ImageViewState extends State<ImageView> {
     );
   }
 
-// Save to gallary
 
-//  _save() async{
-//   await _askPermission();
-//   var response = await Dio().get(
-//     widget.imgUrl,
-//     options: Options(responseType: ResponseType.bytes)
-//   );
-//   final result =
-//   await ImageGallerySaver.saveImage(Uint8List.fromList(response.data));
-//   print(result);
-//   Navigator.pop(context);
-
-//  }
-
-//   _askPermission() async{
-//     if(Platform.isIOS){
-//       Map<Permission, PermissionStatus> permissions =
-//       await [Permission.photos].request();
-//     } else {
-//       PermissionStatus permission = await Permission.storage.status;
-//     }
-//   }
 
 // set home wallpaper
 
