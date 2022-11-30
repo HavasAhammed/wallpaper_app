@@ -70,7 +70,7 @@ class _ImageViewState extends State<ImageView> {
                                   style: TextStyle(
                                       fontSize: 16, color: Colors.white70)),
                               Text(
-                                'Image will be saved in gallery',
+                                'Image will be set as wallpaper',
                                 style: TextStyle(
                                     fontSize: 10, color: Colors.white70),
                               )
