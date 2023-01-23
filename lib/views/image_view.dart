@@ -176,6 +176,8 @@ class _ImageViewState extends State<ImageView> {
         await WallpaperManager.setWallpaperFromFile(file.path, location);
   }
 
+// set both wallpaper
+
   Future<void> setBothWallpaper() async {
     int location = WallpaperManager.BOTH_SCREEN;
     var file = await DefaultCacheManager().getSingleFile(widget.imgUrl);
