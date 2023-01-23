@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
     return ChangeNotifierProvider(
       create: (_) {
         return themeChangeProvider;
-      },
+      },      
       child: Consumer<ThemeProvider>(
           builder: (BuildContext context, value, child) {
         return MaterialApp(

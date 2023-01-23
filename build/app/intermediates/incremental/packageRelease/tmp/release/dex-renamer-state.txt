@@ -1,4 +1,4 @@
-#Tue Nov 29 17:11:10 IST 2022
+#Wed Nov 30 13:30:32 IST 2022
 base.0=/home/havas/Documents/wallpaper_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

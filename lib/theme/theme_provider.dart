@@ -6,7 +6,7 @@ class ThemeProvider with ChangeNotifier {
   ThemePreference preference = ThemePreference();
 
   //getter
-  
+
   bool get darkTheme => _darkTheme;
 
   //setter

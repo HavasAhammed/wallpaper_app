@@ -18,9 +18,7 @@ Widget brandName(BuildContext context) {
           height: 26,
           width: 48,
           decoration: BoxDecoration(
-            color: Colors.amber,
-            borderRadius: BorderRadius.circular(5)
-          ),
+              color: Colors.amber, borderRadius: BorderRadius.circular(5)),
           child: Center(
             child: Text(
               'Hub',

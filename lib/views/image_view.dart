@@ -1,8 +1,16 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_typing_uninitialized_variables, sized_box_for_whitespace, unused_local_variable
 
+import 'dart:typed_data';
+
+import 'package:dio/dio.dart';
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter_wallpaper_manager/flutter_wallpaper_manager.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:wallpaper_hub/views/popover.dart';
 
 class ImageView extends StatefulWidget {
@@ -102,13 +110,53 @@ class _ImageViewState extends State<ImageView> {
                 )
               ],
             ),
+          ),
+          Positioned(
+            top: 35,
+            right: 10,
+            child: IconButton(
+                onPressed: () {
+                  Fluttertoast.showToast(
+                      msg: 'Image downloaded!',
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      timeInSecForIosWeb: 2,
+                      textColor: Colors.white,
+                      fontSize: 14,
+                      backgroundColor: Colors.black87);
+                  _save();
+                },
+                icon: Icon(
+                  Icons.download_for_offline_sharp,
+                  color: Colors.white,
+                  size: 35,
+                )),
           )
         ],
       ),
     );
   }
 
+// downoald image to gallery
 
+  _save() async {
+    await _askPermission();
+    var response = await Dio()
+        .get(widget.imgUrl, options: Options(responseType: ResponseType.bytes));
+    final result =
+        await ImageGallerySaver.saveImage(Uint8List.fromList(response.data));
+    print(result);
+    Navigator.pop(context);
+  }
+
+  _askPermission() async {
+    if (Platform.isIOS) {
+      Map<Permission, PermissionStatus> permissions =
+          await [Permission.photos].request();
+    } else {
+      PermissionStatus permission = await Permission.storage.status;
+    }
+  }
 
 // set home wallpaper
 

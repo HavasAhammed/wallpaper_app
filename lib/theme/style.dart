@@ -18,7 +18,8 @@ abstract class Styles {
               : const TextStyle(
                   color: Colors.white, fontWeight: FontWeight.w800),
           headline6: isDarkTheme
-              ? const TextStyle(color: Colors.black, fontWeight: FontWeight.w800)
+              ? const TextStyle(
+                  color: Colors.black, fontWeight: FontWeight.w800)
               : const TextStyle(
                   color: Colors.black, fontWeight: FontWeight.w800)),
       iconTheme: IconThemeData(

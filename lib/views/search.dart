@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable, use_key_in_widget_constructors, avoid_unnecessary_containers
 
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -29,7 +30,10 @@ class _SearchState extends State<Search> {
         Uri.parse(
           "https://api.pexels.com/v1/search?query=$query&per_page=80&page=1",
         ),
-        headers: {'Authorization': apiKey});
+        headers: {'Authorization': "Bearer $apiKey"});
+
+    // print(response.body);
+    log(response.body.toString());
 
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonData = jsonDecode(response.body);
@@ -81,7 +85,6 @@ class _SearchState extends State<Search> {
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 margin: const EdgeInsets.symmetric(horizontal: 24),
                 child: Row(
-                  
                   children: [
                     Expanded(
                       child: TextField(

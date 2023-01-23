@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables
 
 import 'dart:convert';
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:http/http.dart' as http;
@@ -22,21 +23,22 @@ class _CategoriesState extends State<Categories> {
   bool isLoading = true;
 
   List<WallpaperModel> wallpapers = [];
-  List<String>gg=[];
+  List<String> gg = [];
 
   getSearchWallpapers(String query) async {
     var response = await http.get(
         Uri.parse(
-          "https://api.pexels.com/v1/search?query=$query&per_page=80&page=1",
+          "http://api.pexels.com/v1/search?query=$query&per_page=80&page=1",
         ),
         headers: {'Authorization': apiKey});
 
     // print(response.body.toString());
+    log(response.body.toString());
 
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonData = jsonDecode(response.body);
       jsonData['photos'].forEach((element) {
-        // print(element);
+        print(element);
 
         WallpaperModel wallpaperModel = WallpaperModel();
         wallpaperModel = WallpaperModel.fromMap(element);

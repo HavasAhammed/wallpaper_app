@@ -11,7 +11,6 @@ List<CategoriesModel> getCategories() {
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-
   categoriesModel.imageUrl = 'images/wild_life.jpg';
   categoriesModel.categoriesName = 'Wild Life';
   categories.add(categoriesModel);
