@@ -46,6 +46,8 @@ class _ImageViewState extends State<ImageView> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
+                // set wallpaper button
+
                 GestureDetector(
                   onTap: () {
                     handleButton();
@@ -90,6 +92,9 @@ class _ImageViewState extends State<ImageView> {
                 const SizedBox(
                   height: 16,
                 ),
+
+                // cancel button
+
                 GestureDetector(
                     onTap: () {
                       Navigator.pop(context);
@@ -111,6 +116,9 @@ class _ImageViewState extends State<ImageView> {
               ],
             ),
           ),
+
+          // download image button
+
           Positioned(
             top: 35,
             right: 10,
@@ -185,6 +193,8 @@ class _ImageViewState extends State<ImageView> {
         await WallpaperManager.setWallpaperFromFile(file.path, location);
   }
 
+// set wallpaper button handler
+
   void handleButton() {
     showModalBottomSheet<int>(
         backgroundColor: Colors.transparent,
@@ -215,6 +225,8 @@ class _ImageViewState extends State<ImageView> {
           ));
         });
   }
+
+// popover list
 
   Widget buildListItem(
     BuildContext context, {
