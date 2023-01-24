@@ -133,7 +133,7 @@ class _HomeState extends State<Home> {
             Container(
               height: 80,
               child: ListView.builder(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
+                padding: const EdgeInsets.symmetric(horizontal: 4),
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 itemCount: categories.length,
