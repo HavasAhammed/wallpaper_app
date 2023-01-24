@@ -206,19 +206,28 @@ class _ImageViewState extends State<ImageView> {
               child: Column(
             children: [
               GestureDetector(
-                onTap: setHomeWallpaper,
+                onTap: () {
+                  setHomeWallpaper();
+                  Navigator.of(context).pop();
+                },
                 child: buildListItem(context,
                     title: 'Home Screen',
                     leading: const Icon(Icons.phone_android)),
               ),
               GestureDetector(
-                onTap: setLockWallpaper,
+                onTap: () {
+                  setLockWallpaper();
+                  Navigator.of(context).pop();
+                },
                 child: buildListItem(context,
                     title: 'Lock Screen',
                     leading: const Icon(Icons.screen_lock_portrait)),
               ),
               GestureDetector(
-                onTap: setBothWallpaper,
+                onTap: () {
+                  setBothWallpaper();
+                  Navigator.of(context).pop();
+                },
                 child: buildListItem(context,
                     title: 'Both Screen',
                     leading: const Icon(Icons.content_copy)),

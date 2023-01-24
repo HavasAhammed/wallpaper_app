@@ -69,6 +69,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="/home/havas/Documents/wallpaper_app/android@@:fluttertoast::release"
+      jars="/home/havas/Documents/wallpaper_app/build/fluttertoast/.transforms/243577ab529949d179c18a1eda9dcec6/transformed/out/jars/classes.jar"
+      resolved="com.example.FlutterToast:fluttertoast:unspecified"
+      folder="/home/havas/Documents/wallpaper_app/build/fluttertoast/.transforms/243577ab529949d179c18a1eda9dcec6/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/home/havas/Documents/wallpaper_app/android@@:path_provider_android::release"
       jars="/home/havas/Documents/wallpaper_app/build/path_provider_android/.transforms/97a3ad93bb5724e568f64e00238bfc69/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
@@ -82,9 +95,9 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="io.flutter:flutter_embedding_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25@jar"
-      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/flutter_embedding_release/1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25/59f57bcae773254f39c76e0bce23dc93edf80a0f/flutter_embedding_release-1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25.jar"
-      resolved="io.flutter:flutter_embedding_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"/>
+      name="io.flutter:flutter_embedding_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a@jar"
+      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/flutter_embedding_release/1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a/89b3bbec4a0b2724d3ff631cd5834c1fad7bef22/flutter_embedding_release-1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a.jar"
+      resolved="io.flutter:flutter_embedding_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a"/>
   <library
       name="androidx.window:window-java:1.0.0-beta04@aar"
       jars="/home/havas/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/jars/classes.jar"
@@ -128,17 +141,17 @@
       jars="/home/havas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10"/>
   <library
-      name="io.flutter:armeabi_v7a_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25@jar"
-      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/armeabi_v7a_release/1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25/18fa4a22931d1efa6c6748eb22aa394e726a191f/armeabi_v7a_release-1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25.jar"
-      resolved="io.flutter:armeabi_v7a_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"/>
+      name="io.flutter:armeabi_v7a_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a@jar"
+      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/armeabi_v7a_release/1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a/8a3f110a00b64e15ce4531f6e654b56b350f98a9/armeabi_v7a_release-1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a.jar"
+      resolved="io.flutter:armeabi_v7a_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a"/>
   <library
-      name="io.flutter:arm64_v8a_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25@jar"
-      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/arm64_v8a_release/1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25/a771354d4a3281d1a6312d5d940a93beb431bb8a/arm64_v8a_release-1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25.jar"
-      resolved="io.flutter:arm64_v8a_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"/>
+      name="io.flutter:arm64_v8a_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a@jar"
+      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/arm64_v8a_release/1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a/30eb9cbefab6c0a452b5514ff376a7eb97e38fb/arm64_v8a_release-1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a.jar"
+      resolved="io.flutter:arm64_v8a_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a"/>
   <library
-      name="io.flutter:x86_64_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25@jar"
-      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/x86_64_release/1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25/5cc38c24f7784a71fab48931144c60390b61aaa3/x86_64_release-1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25.jar"
-      resolved="io.flutter:x86_64_release:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25"/>
+      name="io.flutter:x86_64_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a@jar"
+      jars="/home/havas/.gradle/caches/modules-2/files-2.1/io.flutter/x86_64_release/1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a/7cb9c65ad6faf1c93af5a2f472069a96f8508a5a/x86_64_release-1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a.jar"
+      resolved="io.flutter:x86_64_release:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a"/>
   <library
       name="androidx.lifecycle:lifecycle-common-java8:2.2.0@jar"
       jars="/home/havas/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.2.0/cd3478503da69b1a7e0319bd2d1389943db9b364/lifecycle-common-java8-2.2.0.jar"
