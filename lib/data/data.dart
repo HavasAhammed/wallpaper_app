@@ -6,37 +6,51 @@ List<CategoriesModel> getCategories() {
   List<CategoriesModel> categories = [];
   CategoriesModel categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/street_art3.jpg';
+  // street art
+
+  categoriesModel.imageUrl = 'assets/street_art.jpg';
   categoriesModel.categoriesName = 'Street Art';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/wild_life.jpg';
+  // wild life
+
+  categoriesModel.imageUrl = 'assets/wild_life.jpg';
   categoriesModel.categoriesName = 'Wild Life';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/nature.jpg';
+  // nature
+
+  categoriesModel.imageUrl = 'assets/nature.jpg';
   categoriesModel.categoriesName = 'Nature';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/city.jpg';
+  // city
+
+  categoriesModel.imageUrl = 'assets/city.jpg';
   categoriesModel.categoriesName = 'City';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/motivation.jpg';
+  // motivation
+
+  categoriesModel.imageUrl = 'assets/motivation.jpg';
   categoriesModel.categoriesName = 'Motivation';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/bikes.jpg';
+  // bikes
+
+  categoriesModel.imageUrl = 'assets/bikes.jpg';
   categoriesModel.categoriesName = 'Bikes';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();
 
-  categoriesModel.imageUrl = 'images/cars.jpg';
+  // cars
+
+  categoriesModel.imageUrl = 'assets/cars.jpg';
   categoriesModel.categoriesName = 'Cars';
   categories.add(categoriesModel);
   categoriesModel = CategoriesModel();

@@ -9,8 +9,9 @@ import 'package:provider/provider.dart';
 import 'package:wallpaper_hub/data/data.dart';
 import 'package:wallpaper_hub/model/wallpaper_model.dart';
 import 'package:wallpaper_hub/theme/theme_provider.dart';
-import 'package:wallpaper_hub/widgets/widgets.dart';
+import 'package:wallpaper_hub/widgets/brand_name_widgets.dart';
 import 'package:http/http.dart' as http;
+import 'package:wallpaper_hub/widgets/wallpaper_list_widget.dart';
 
 class Search extends StatefulWidget {
   String searchQuery;
@@ -72,60 +73,66 @@ class _SearchState extends State<Search> {
           )
         ],
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          child: Column(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: themeChange.darkTheme
-                        ? const Color.fromARGB(255, 208, 214, 224)
-                        : const Color.fromARGB(255, 29, 39, 38)),
-                padding: const EdgeInsets.symmetric(horizontal: 24),
-                margin: const EdgeInsets.symmetric(horizontal: 24),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        style: TextStyle(
-                            color: themeChange.darkTheme
-                                ? Colors.black
-                                : Colors.white),
-                        controller: _searchController,
-                        decoration: const InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'search wallpaper',
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        getSearchWallpapers(_searchController.text);
-                      },
-                      child: Container(
-                          child: Icon(
-                        Icons.search,
+      body: Column(
+        children: [
+          // search field
+
+          Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: themeChange.darkTheme
+                    ? const Color.fromARGB(255, 208, 214, 224)
+                    : const Color.fromARGB(255, 29, 39, 38)),
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            margin: const EdgeInsets.symmetric(horizontal: 24),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    style: TextStyle(
                         color: themeChange.darkTheme
-                            ? Colors.black54
-                            : Colors.white60,
-                      )),
-                    )
-                  ],
+                            ? Colors.black
+                            : Colors.white),
+                    controller: _searchController,
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'search wallpaper',
+                    ),
+                  ),
                 ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              isLoading
-                  ? SpinKitFadingCircle(
-                      color:
-                          themeChange.darkTheme ? Colors.black : Colors.white,
-                    )
-                  : wallpaperList(wallpapers: wallpapers, context: context)
-            ],
+                GestureDetector(
+                  onTap: () {
+                    getSearchWallpapers(_searchController.text);
+                  },
+                  child: Container(
+                      child: Icon(
+                    Icons.search,
+                    color:
+                        themeChange.darkTheme ? Colors.black54 : Colors.white60,
+                  )),
+                )
+              ],
+            ),
           ),
-        ),
+          const SizedBox(
+            height: 15,
+          ),
+
+          // wallpaper list
+
+          Expanded(
+            child: ListView(
+              children: [
+                isLoading
+                    ? SpinKitFadingCircle(
+                        color:
+                            themeChange.darkTheme ? Colors.black : Colors.white,
+                      )
+                    : wallpaperList(wallpapers: wallpapers, context: context),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

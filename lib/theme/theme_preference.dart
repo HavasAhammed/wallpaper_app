@@ -1,7 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemePreference {
-  // ignore: constant_identifier_names
   static const THEME_STATUS = 'THEME_STATUS';
 
   void setTheme(bool value) async {

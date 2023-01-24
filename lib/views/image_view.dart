@@ -11,7 +11,7 @@ import 'package:flutter_wallpaper_manager/flutter_wallpaper_manager.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:wallpaper_hub/views/popover.dart';
+import 'package:wallpaper_hub/widgets/popover_widget.dart';
 
 class ImageView extends StatefulWidget {
   final String imgUrl;
@@ -29,6 +29,8 @@ class _ImageViewState extends State<ImageView> {
     return Scaffold(
       body: Stack(
         children: [
+          // wallpaper image
+
           Hero(
             tag: widget.imgUrl,
             child: Container(
@@ -200,7 +202,7 @@ class _ImageViewState extends State<ImageView> {
         backgroundColor: Colors.transparent,
         context: context,
         builder: (context) {
-          return Popover(
+          return PopoverWidget(
               child: Column(
             children: [
               GestureDetector(

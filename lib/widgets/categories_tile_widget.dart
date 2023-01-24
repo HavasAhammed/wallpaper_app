@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_hub/views/category.dart';
+import 'package:wallpaper_hub/views/categories.dart';
 
 class CategoriesTileWidget extends StatelessWidget {
   final String? imageUrl;

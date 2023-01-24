@@ -1,5 +1,3 @@
-// ignore_for_file: unused_local_variable, avoid_unnecessary_containers, sized_box_for_whitespace, prefer_const_constructors_in_immutables, use_key_in_widget_constructors
-
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -9,9 +7,10 @@ import 'package:wallpaper_hub/model/wallpaper_model.dart';
 import 'package:wallpaper_hub/theme/theme_provider.dart';
 import 'package:wallpaper_hub/views/search.dart';
 import 'package:wallpaper_hub/widgets/categories_tile_widget.dart';
-import 'package:wallpaper_hub/widgets/widgets.dart';
+import 'package:wallpaper_hub/widgets/brand_name_widgets.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
+import 'package:wallpaper_hub/widgets/wallpaper_list_widget.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -131,27 +130,27 @@ class _HomeState extends State<Home> {
 
             // category list
 
+            Container(
+              height: 80,
+              child: ListView.builder(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemCount: categories.length,
+                itemBuilder: (context, index) {
+                  return CategoriesTileWidget(
+                    title: categories[index].categoriesName.toString(),
+                    imageUrl: categories[index].imageUrl,
+                  );
+                },
+              ),
+            ),
+
+            // wallpaper list
+
             Expanded(
               child: ListView(
                 children: [
-                  Container(
-                    height: 80,
-                    child: ListView.builder(
-                      padding: const EdgeInsets.symmetric(horizontal: 24),
-                      shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
-                      itemCount: categories.length,
-                      itemBuilder: (context, index) {
-                        return CategoriesTileWidget(
-                          title: categories[index].categoriesName.toString(),
-                          imageUrl: categories[index].imageUrl,
-                        );
-                      },
-                    ),
-                  ),
-
-                  // wallpaper list
-
                   isLoading
                       ? SpinKitFadingCircle(
                           color: themeChange.darkTheme
